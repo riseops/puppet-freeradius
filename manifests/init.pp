@@ -71,13 +71,13 @@ class freeradius (
 
   # Preserve some stock modules
   if ($preserve_mods) {
+    #TODO: properly handle 'dhcp',
     freeradius::module { [
       'always',
       'cache_eap',
       'chap',
       'detail',
       'detail.log',
-      'dhcp',
       'digest',
       'dynamic_clients',
       'echo',
